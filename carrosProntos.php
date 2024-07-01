@@ -31,9 +31,13 @@ $result = $conn ->query($sql);
                 <?php
                     while($user_data = mysqli_fetch_assoc($result))
                     {
-                        echo"<tr>";
+                        echo "<tr>";
+                        echo "<td>".$user_data['proprietario']. "</td>";
+                        echo "<td>".$user_data['contato']. "</td>";
                         echo "<td>".$user_data['carro']. "</td>";
                         echo "<td>".$user_data['placa']. "</td>";
+                        echo '<td><button type="button" class="btn btn-danger">Excluir</button></td>';
+                        echo "</tr>";
                     }
 
                 ?>

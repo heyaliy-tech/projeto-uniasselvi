@@ -38,6 +38,8 @@ $result = $conn ->query($sql);
                         echo "<td>".$user_data['contato']. "</td>";
                         echo "<td>".$user_data['carro']. "</td>";
                         echo "<td>".$user_data['placa']. "</td>";
+                        echo '<td><button type="button" class="btn btn-danger">Excluir</button></td>';
+                        echo "</tr>";
                     }
 
                 ?>
