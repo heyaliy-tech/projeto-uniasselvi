@@ -3,17 +3,17 @@ session_start();
 require_once("conectardb.php");
 
 if (isset($_POST ['cadastre'])){
-    if(!empty($_POST['nomecarro']) || !empty($_POST['placacarro'] ))
-        $contato=$POST ['nome_proprietario'];
-        $proprietario=$POST ['contatoProprietario'];
-        $carro=$_POST ['nomecarro'];
-        $placa=$_POST['placacarro'];
-
-        $comando="INSERT INTO cadastrocarros (carro, placa, proprietario, contato) VALUES ('$carro', '$placa', '$proprietario', '$contato')";
+    if(!empty($_POST['nomeCarro']) || !empty($_POST['placaCarro']) || !empty($_POST['nomeProprietario'] ) || !empty($_POST['contatoProprietario'] ))
+        $proprietario=$_POST ['nomeProprietario'];
+        $contato=$_POST ['contatoProprietario'];
+        $carro=$_POST ['nomeCarro'];
+        $placa=$_POST['placaCarro'];
+        
+        $comando="INSERT INTO cadastroCarros (proprietario, contato, carro, placa) VALUES ('$proprietario', '$contato', '$carro', '$placa')";
         $cadastre=mysqli_query($conn,$comando);
 
         if($cadastre){
-          
+        echo "Sucesso!";
             header("location:cadastrarcarros.php");
         
         }else 
