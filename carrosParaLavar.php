@@ -26,7 +26,9 @@ $result = $conn ->query($sql);
                 <th scope="col">Contato</th>
                 <th scope="col">Carro</th>
                 <th scope="col">Placa</th>
-                <th scope="col">...</th>
+                <th scope="col"></th>
+                <td>
+    
             </tr>
         </thead>
         <tbody>
@@ -38,7 +40,7 @@ $result = $conn ->query($sql);
                         echo "<td>".$user_data['contato']. "</td>";
                         echo "<td>".$user_data['carro']. "</td>";
                         echo "<td>".$user_data['placa']. "</td>";
-                        echo '<td><button type="button" class="btn btn-danger">Excluir</button></td>';
+                        echo '<td><a href="excluir_registro.php?id=' . $user_data['id'] . '" class="btn btn-danger">Excluir</a></td>';
                         echo "</tr>";
                     }
 
