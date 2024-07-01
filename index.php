@@ -18,12 +18,12 @@
     </div>
     <main>
         <nav>
-            <a href="cadastrarcarros.php" target="conteudo">Cadastre</a>
+            <a href="cadastrarCarros.php" target="conteudo">Cadastre</a>
             <a href="carrosParaLavar.php" target="conteudo">Carros para lavar</a>
             <a href="carrosProntos.php" target="conteudo">Prontos</a>
         </nav>
         <section>
-            <iframe src="cadastrarcarros.php" name="conteudo"></iframe>
+            <iframe src="cadastrarCarros.php" name="conteudo"></iframe>
         </section>
     </main>
 </body>

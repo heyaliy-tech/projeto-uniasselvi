@@ -14,12 +14,12 @@ if (isset($_POST ['cadastre'])){
 
         if($cadastre){
         echo "Sucesso!";
-            header("location:cadastrarcarros.php");
+            header("location:cadastrarCarros.php");
         
         }else 
           
         
-            header("location:cadastrarcarros.php");
+            header("location:cadastrarCarros.php");
         
         
 }
