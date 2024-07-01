@@ -10,7 +10,7 @@ session_start();
 </head>
 <body>
     <h1>Cadastrar os carros</h1>
-    <form action="enviarCadastro.php" method="post" accept-charset="utf-8">
+     <form action="enviarCadastro.php" method="post" accept-charset="utf-8">
 
         <label for="nomeProprietario">Nome do proprietário:</label>
         <input type="text" name="nomeProprietario" id="nomeProprietario" required placeholder="Ex: João da Silva"> <br>

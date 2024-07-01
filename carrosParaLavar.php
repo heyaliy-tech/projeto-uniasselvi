@@ -33,14 +33,16 @@ $result = $conn ->query($sql);
         </thead>
         <tbody>
                 <?php
-                    while($user_data = mysqli_fetch_assoc($result))
+                    while($user_data = mysqli_fetch_array($result))
                     {
                         echo"<tr>";
                         echo "<td>".$user_data['proprietario']. "</td>";
                         echo "<td>".$user_data['contato']. "</td>";
                         echo "<td>".$user_data['carro']. "</td>";
                         echo "<td>".$user_data['placa']. "</td>";
-                        echo '<td><a href="excluir_registro.php?id=' . $user_data['id'] . '" class="btn btn-danger">Excluir</a></td>';
+                        echo "<td>".$user_data['id']. "</td>";
+                        echo '<td><a href="editaRegistro.php?id=' . $user_data['id'] . '" class="btn btn-primary">Carro Pronto</a></td>';
+                        echo '<td><a href="excluirRegistro.php?id=' . $user_data['id'] . '" class="btn btn-danger">Excluir</a></td>';
                         echo "</tr>";
                     }
 

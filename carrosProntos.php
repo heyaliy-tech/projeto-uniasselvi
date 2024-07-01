@@ -22,6 +22,8 @@ $result = $conn ->query($sql);
     <table class="table">
         <thead>
             <tr>
+                <th scope="col">Proprietário</th>
+                <th scope="col">Contato</th>
                 <th scope="col">Carro</th>
                 <th scope="col">Placa</th>
                 <th scope="col">...</th>
