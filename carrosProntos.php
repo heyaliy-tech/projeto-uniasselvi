@@ -3,7 +3,7 @@ session_start();
 
 include_once("conectardb.php");
 
-$sql = "SELECT * FROM cadastrocarros WHERE carroLimpo = 1";
+$sql = "SELECT * FROM cadastroCarros WHERE carroLimpo = 1";
 
 $result = $conn ->query($sql);
 
@@ -38,7 +38,7 @@ $result = $conn ->query($sql);
                         echo "<td>".$user_data['contato']. "</td>";
                         echo "<td>".$user_data['carro']. "</td>";
                         echo "<td>".$user_data['placa']. "</td>";
-                        echo '<td><button type="button" class="btn btn-danger">Excluir</button></td>';
+                        echo '<td><a href="excluirRegistro.php?id=' . $user_data['id'] . '" class="btn btn-danger">Excluir</a></td>';
                         echo "</tr>";
                     }
 
