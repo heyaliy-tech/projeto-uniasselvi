@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+lable{
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f0f2f5;
@@ -11,34 +15,38 @@ body {
     line-height: 1.6;
 }
 
-
+/*cabeçalho da pagina*/
 .header-container {
             position: block;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #333; /* Ajuste a cor de fundo conforme necessário */
+            background-image: url(https://img.freepik.com/fotos-gratis/estacao-de-detalhamento-de-lavagem-de-carro_1303-22319.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 140px;
             text-align: center;
             margin-top: 10px;
             margin: 20px;
             padding: 20px;
             border-radius: 8px;
 }
-    
+
+.header-container h1 {
+    font-family: Gabriola, sans-serif;
+    font-size: 48px;
+    color: rgb(0, 0, 0);
+}
 
 .header-container img {
             margin-right: 20px; /* Espaçamento entre a imagem e o texto */
         }
 
-.header-container h1 {
-            font-family: Gabriola, sans-serif;
-            font-size: 48px;
-            color: white;
-        }
+
 
 main {
     display: flex;
-    margin-top: 20px; /* Adjusted to account for the header height */
+    margin-top: 20px; 
     padding: 20px;
     background-color: #eceff1;
     border-radius: 8px;

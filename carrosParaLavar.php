@@ -40,7 +40,6 @@ $result = $conn ->query($sql);
                         echo "<td>".$user_data['contato']. "</td>";
                         echo "<td>".$user_data['carro']. "</td>";
                         echo "<td>".$user_data['placa']. "</td>";
-                        echo '<td><a href="editaRegistro.php?id=' . $user_data['id'] . '" class="btn btn-primary">Editar</a></td>';
                         echo '<td><a href="carroPronto.php?id=' . $user_data['id'] . '" class="btn btn-primary">Carro Pronto</a></td>';
                         echo '<td><a href="excluirRegistro.php?id=' . $user_data['id'] . '" class="btn btn-danger">Excluir</a></td>';
                         echo "</tr>";

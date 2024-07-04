@@ -10,8 +10,7 @@
 <body>
 <div class="header-container">   
 <header>
-       
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Escudo_do_Sport_Club_Internacional.svg/600px-Escudo_do_Sport_Club_Internacional.svg.png" alt="Logo" width="50" height="50"> <!-- Substitua "logo.png" pelo caminho da sua imagem -->
+    
             <h1>Lavagem do Jorge</h1>
         
     </header>

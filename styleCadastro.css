@@ -1,0 +1,67 @@
+h1 {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.enunciadoCadastro {
+    font-family: 'Roboto', sans-serif;
+}
+
+#nomeProprietario {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#contatoProprietario {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#nomeCarro {
+    border: 1px solid #ccc; /* borda caixa*/
+    border-radius: 5px; /* curva borda*/
+    padding: 8px;
+}
+
+#placaCarro {
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    padding: 8px;
+}
+
+
+.botaoCadastrar {
+    background-color: #007bff;
+    color: rgb(255, 255, 255); /* cor do texto do botao */
+    border: 5px;
+    margin-bottom: 5px;
+    padding: 10px 15px; /* tamanho botao */
+    cursor: pointer; /* passagem do mause */
+    border-radius: 4px; /* borda arredondada */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.botaoCadastrar:hover {
+    background-color: #0056b3; /* cor da passagem do mause */
+}
+
+
+.containerFormulario {
+    width: 300px; /* largura desejada */
+    margin: 0 auto; /* centraliza horizontalmente */
+    padding: 25px; /* espaço interno */
+    border: 1px solid #ccc; /* borda cinza */
+    border-radius: 15px; /* borda arredondada */
+    box-shadow: 0 0 15px rgba(0, 0, 0.3, 0.5); /* sombra */
+}
+
+
+.containerFormulario form {
+    display: flex;
+    flex-direction: column;
+}
+

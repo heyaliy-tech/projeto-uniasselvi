@@ -12,11 +12,12 @@ $deletar = "DELETE FROM cadastroCarros WHERE id = $id ";
 
 $query_cadastros = mysqli_query($conn, $deletar) or die(mysqli_error($conn));
 
-echo "$deletar"
+if($deletar){
+    header("location:cadastrarCarros.php");
 
-//
+}else 
+  
 
-
-//header('location: listagem.php');
+    header("location:cadastrarCarros.php");
 
 ?>
